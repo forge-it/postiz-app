@@ -19,16 +19,7 @@ import { useVariables } from '@gitroom/react/helpers/variable.context';
 import { useTrack } from '@gitroom/react/helpers/use.track';
 import { TrackEnum } from '@gitroom/nestjs-libraries/user/track.enum';
 import { FarcasterProvider } from '@gitroom/frontend/components/auth/providers/farcaster.provider';
-import dynamic from 'next/dynamic';
-import { WalletUiProvider } from '@gitroom/frontend/components/auth/providers/placeholder/wallet.ui.provider';
-import { useT } from '@gitroom/react/translation/get.transation.service.client';
-const WalletProvider = dynamic(
-  () => import('@gitroom/frontend/components/auth/providers/wallet.provider'),
-  {
-    ssr: false,
-    loading: () => <WalletUiProvider />,
-  }
-);
+
 type Inputs = {
   email: string;
   password: string;
@@ -161,7 +152,6 @@ export function RegisterAfter({
                 <GoogleProvider />
               )}
               {!!neynarClientId && <FarcasterProvider />}
-              {billingEnabled && <WalletProvider />}
             </div>
           ))}
         {!isAfterProvider && (
@@ -204,20 +194,23 @@ export function RegisterAfter({
           {t(
             'by_registering_you_agree_to_our',
             'By registering you agree to our'
-          )}&nbsp;
+          )}
+          &nbsp;
           <a
             href={`https://postiz.forgeit.ro/terms-of-service`}
             className="underline hover:font-bold"
           >
             {t('terms_of_service', 'Terms of Service')}
-          </a>&nbsp;
+          </a>
+          &nbsp;
           {t('and', 'and')}&nbsp;
           <a
             href={`https://postiz.forgeit.ro/privacy-policy`}
             className="underline hover:font-bold"
           >
             {t('privacy_policy', 'Privacy Policy')}
-          </a>&nbsp;
+          </a>
+          &nbsp;
         </div>
         <div className="text-center mt-6">
           <div className="w-full flex">
