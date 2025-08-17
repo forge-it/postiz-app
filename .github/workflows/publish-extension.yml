@@ -1,27 +1,20 @@
 name: Publish Extension
-
 on:
   workflow_dispatch:
-
 jobs:
   submit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: pnpm/action-setup@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
-
       - name: Install dependencies
         run: pnpm install
-
       - name: Zip extensions
-        run: FRONTEND_URL=https://platform.postiz.com pnpm run build:extension
-
+        run: FRONTEND_URL=https://yourdomain.com pnpm run build:extension
       - name: Publish to Chrome Web Store
         uses: mnao305/chrome-extension-upload@v5.0.0
         with:

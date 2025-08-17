@@ -104,15 +104,6 @@
 
 To have the project up and running, please follow the [Quick Start Guide](https://docs.postiz.com/quickstart)
 
-## Sponsor Postiz
-
-We now give a few options to Sponsor Postiz:
-- Just a donation: You like what we are building, and want to buy us some coffees so we can build faster.
-- Main Repository: Get your logo with a backlink from the main Postiz repository. Postiz has almost 3m downloads and 20k views per month.
-- Main Repository + Website: Get your logo on the central repository and the main website. Here are some metrics: - Website has 20k hits per month + 65 DR (strong backlink) - Repository has 20k hits per month + Almost 3m docker downloads.
-
-Link: https://opencollective.com/postiz
-
 ## Postiz Compliance
 
 - Postiz is an open-source, self-hosted social media scheduling tool that supports platforms like X (formerly Twitter), Bluesky, Mastodon, Discord, and others.
@@ -124,7 +115,7 @@ Link: https://opencollective.com/postiz
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=gitroomhq/postiz-app&type=Date)](https://www.star-history.com/#gitroomhq/postiz-app&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=forge-it/postiz-app&type=Date)](https://www.star-history.com/#forge-it/postiz-app&Date)
 
 ## License
 
