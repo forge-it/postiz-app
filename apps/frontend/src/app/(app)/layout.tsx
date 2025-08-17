@@ -7,7 +7,7 @@ import '@copilotkit/react-ui/styles.css';
 import LayoutContext from '@gitroom/frontend/components/layout/layout.context';
 import { ReactNode } from 'react';
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import PlausibleProvider from 'next-plausible';
+
 import clsx from 'clsx';
 import { VariableContextComponent } from '@gitroom/react/helpers/variable.context';
 import { Fragment } from 'react';
@@ -34,9 +34,6 @@ const jakartaSans = Plus_Jakarta_Sans({
 
 export default async function AppLayout({ children }: { children: ReactNode }) {
   const allHeaders = headers();
-  const Plausible = !!process.env.STRIPE_PUBLISHABLE_KEY
-    ? PlausibleProvider
-    : Fragment;
   return (
     <html>
       <head>
@@ -83,19 +80,15 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
             <HtmlComponent />
             <ToltScript />
             <FacebookComponent />
-            <Plausible
-              domain={!!process.env.IS_GENERAL ? 'postiz.com' : 'gitroom.com'}
+            <PHProvider
+              phkey={process.env.NEXT_PUBLIC_POSTHOG_KEY}
+              host={process.env.NEXT_PUBLIC_POSTHOG_HOST}
             >
-              <PHProvider
-                phkey={process.env.NEXT_PUBLIC_POSTHOG_KEY}
-                host={process.env.NEXT_PUBLIC_POSTHOG_HOST}
-              >
-                <LayoutContext>
-                  <UtmSaver />
-                  {children}
-                </LayoutContext>
-              </PHProvider>
-            </Plausible>
+              <LayoutContext>
+                <UtmSaver />
+                {children}
+              </LayoutContext>
+            </PHProvider>
           </SentryComponent>
         </VariableContextComponent>
       </body>
