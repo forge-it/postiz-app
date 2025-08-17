@@ -31,7 +31,8 @@ export class StripeController {
     // Maybe it comes from another stripe webhook
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    if (event?.data?.object?.metadata?.service !== 'gitroom') {
+    if (event?.data?.object?.metadata?.service !== 'forgeit') {
+      console.log('Ignoring non-forgeit webhook:', event?.data?.object?.metadata?.service || 'no service');
       return { ok: true };
     }
 
@@ -56,9 +57,10 @@ export class StripeController {
     if (
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
-      event?.data?.object?.metadata?.service !== 'gitroom' &&
+      event?.data?.object?.metadata?.service !== 'forgeit' &&
       event.type !== 'invoice.payment_succeeded'
     ) {
+      console.log('Ignoring non-forgeit webhook:', event?.data?.object?.metadata?.service || 'no service');
       return { ok: true };
     }
 

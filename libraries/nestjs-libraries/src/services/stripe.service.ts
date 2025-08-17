@@ -337,7 +337,7 @@ export class StripeService {
         cancel_at_period_end:
           !currentUserSubscription.data[0].cancel_at_period_end,
         metadata: {
-          service: 'gitroom',
+          service: 'forgeit',
           id,
         },
       }
@@ -381,7 +381,7 @@ export class StripeService {
       subscription_data: {
         ...(allowTrial ? { trial_period_days: 7 } : {}),
         metadata: {
-          service: 'gitroom',
+          service: 'forgeit',
           ...body,
           userId,
           uniqueId,
@@ -438,7 +438,7 @@ export class StripeService {
         service_agreement: 'full',
       },
       metadata: {
-        service: 'gitroom',
+        service: 'forgeit',
       },
       country,
       email,
@@ -528,7 +528,7 @@ export class StripeService {
       success_url: process.env['FRONTEND_URL'] + `/messages/${groupId}`,
       metadata: {
         orderId,
-        service: 'gitroom',
+        service: 'forgeit',
         type: 'marketplace',
       },
       line_items: [
@@ -643,7 +643,7 @@ export class StripeService {
       await stripe.subscriptions.update(currentUserSubscription.data[0].id, {
         cancel_at_period_end: false,
         metadata: {
-          service: 'gitroom',
+          service: 'forgeit',
           ...body,
           userId,
           id,

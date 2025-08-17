@@ -130,7 +130,7 @@ export const LayoutSettings = ({ children }: { children: ReactNode }) => {
                       />
                     </svg>
                   ) : (
-                    'Gitroom'
+                    'Forgeit'
                   )}
                 </div>
               </Link>
