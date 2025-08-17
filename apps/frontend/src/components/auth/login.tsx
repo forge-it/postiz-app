@@ -13,6 +13,7 @@ import { OauthProvider } from '@gitroom/frontend/components/auth/providers/oauth
 import { GoogleProvider } from '@gitroom/frontend/components/auth/providers/google.provider';
 import { useVariables } from '@gitroom/react/helpers/variable.context';
 import { FarcasterProvider } from '@gitroom/frontend/components/auth/providers/farcaster.provider';
+import { useT } from '@gitroom/react/translation/get.transation.service.client';
 
 type Inputs = {
   email: string;

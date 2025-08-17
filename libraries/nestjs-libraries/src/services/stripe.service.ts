@@ -87,7 +87,7 @@ export class StripeService {
     try {
       const paymentIntent = await stripe.paymentIntents.create({
         amount: 100,
-        currency: 'usd',
+        currency: 'ron',
         payment_method: latestMethod.id,
         customer: event.data.object.customer as string,
         automatic_payment_methods: {
@@ -263,7 +263,7 @@ export class StripeService {
       (await stripe.prices.create({
         active: true,
         product: findProduct!.id,
-        currency: 'usd',
+        currency: 'ron',
         nickname: body.billing + ' ' + body.period,
         unit_amount:
           (body.period === 'MONTHLY'
@@ -524,7 +524,7 @@ export class StripeService {
     const { url } = await stripe.checkout.sessions.create({
       customer,
       mode: 'payment',
-      currency: 'usd',
+      currency: 'ron',
       success_url: process.env['FRONTEND_URL'] + `/messages/${groupId}`,
       metadata: {
         orderId,
@@ -540,7 +540,7 @@ export class StripeService {
         },
       ].map((item) => ({
         price_data: {
-          currency: 'usd',
+          currency: 'ron',
           product_data: {
             // @ts-ignore
             name:
@@ -604,7 +604,7 @@ export class StripeService {
       (await stripe.prices.create({
         active: true,
         product: findProduct!.id,
-        currency: 'usd',
+        currency: 'ron',
         nickname: body.billing + ' ' + body.period,
         unit_amount:
           (body.period === 'MONTHLY'
@@ -693,7 +693,7 @@ export class StripeService {
   ) {
     return stripe.transfers.create({
       amount: price * 100,
-      currency: 'usd',
+      currency: 'ron',
       destination: account,
       source_transaction: charge,
       transfer_group: orderId,
