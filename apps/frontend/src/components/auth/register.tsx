@@ -142,19 +142,7 @@ export function RegisterAfter({
             {t('sign_up', 'Sign Up')}
           </h1>
         </div>
-        {!isAfterProvider &&
-          (!isGeneral ? (
-            <GithubProvider />
-          ) : (
-            <div className="gap-[5px] flex flex-col">
-              {genericOauth && isGeneral ? (
-                <OauthProvider />
-              ) : (
-                <GoogleProvider />
-              )}
-              {!!neynarClientId && <FarcasterProvider />}
-            </div>
-          ))}
+        {<div className="gap-[5px] flex flex-col">{<GoogleProvider />}</div>}
         {!isAfterProvider && (
           <div className="h-[20px] mb-[24px] mt-[24px] relative">
             <div className="absolute w-full h-[1px] bg-fifth top-[50%] -translate-y-[50%]" />

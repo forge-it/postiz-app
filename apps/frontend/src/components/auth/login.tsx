@@ -61,16 +61,7 @@ export function Login() {
             {t('sign_in', 'Sign In')}
           </h1>
         </div>
-        {isGeneral && genericOauth ? (
-          <OauthProvider />
-        ) : !isGeneral ? (
-          <GithubProvider />
-        ) : (
-          <div className="gap-[5px] flex flex-col">
-            <GoogleProvider />
-            {!!neynarClientId && <FarcasterProvider />}
-          </div>
-        )}
+        {<GoogleProvider />}
         <div className="h-[20px] mb-[24px] mt-[24px] relative">
           <div className="absolute w-full h-[1px] bg-fifth top-[50%] -translate-y-[50%]" />
           <div
@@ -109,7 +100,7 @@ export function Login() {
           </div>
           <p className="mt-4 text-sm">
             {t('don_t_have_an_account', "Don't Have An Account?")}&nbsp;
-            <Link href="/auth" className="underline cursor-pointer">
+            <Link href="/auth/register" className="underline cursor-pointer">
               {t('sign_up', 'Sign Up')}
             </Link>
           </p>
