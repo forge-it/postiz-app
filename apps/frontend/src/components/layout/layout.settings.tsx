@@ -147,7 +147,6 @@ export const LayoutSettings = ({ children }: { children: ReactNode }) => {
                 className="flex items-center justify-self-end gap-[8px] order-2 md:order-3"
               >
                 <LanguageComponent />
-                <ChromeExtensionComponent />
                 <ModeComponent />
                 <SettingsComponent />
                 <NotificationComponent />

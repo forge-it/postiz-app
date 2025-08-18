@@ -115,7 +115,6 @@ export const LayoutComponent = ({ children }: { children: ReactNode }) => {
                       </div>
                       <div className="w-[1px] h-[20px] bg-blockSeparator" />
                       <LanguageComponent />
-                      <ChromeExtensionComponent />
                       <div className="w-[1px] h-[20px] bg-blockSeparator" />
                       <NotificationComponent />
                     </div>
