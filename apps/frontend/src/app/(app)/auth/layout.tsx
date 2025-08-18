@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import loadDynamic from 'next/dynamic';
 import { isGeneralServerSide } from '@gitroom/helpers/utils/is.general.server.side';
 const ReturnUrlComponent = loadDynamic(() => import('./return.url.component'));
+
 export default async function AuthLayout({
   children,
 }: {
