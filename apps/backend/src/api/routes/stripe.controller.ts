@@ -32,9 +32,10 @@ export class StripeController {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     if (event?.data?.object?.metadata?.service !== 'forgeit') {
-      // @ts-ignore
+      
       console.log(
         'Ignoring non-forgeit webhook:',
+        // @ts-ignore
         event?.data?.object?.metadata?.service || 'no service'
       );
       return { ok: true };
@@ -67,6 +68,7 @@ export class StripeController {
       // @ts-ignore
       console.log(
         'Ignoring non-forgeit webhook:',
+        // @ts-ignore
         event?.data?.object?.metadata?.service || 'no service'
       );
       return { ok: true };
