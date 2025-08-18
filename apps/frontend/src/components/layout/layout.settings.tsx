@@ -45,10 +45,12 @@ import { LanguageComponent } from '@gitroom/frontend/components/layout/language.
 import { useT } from '@gitroom/react/translation/get.transation.service.client';
 import i18next from '@gitroom/react/translation/i18next';
 import { MediaSettingsLayout } from '@gitroom/frontend/components/launches/helpers/media.settings.component';
+
 extend(utc);
 extend(weekOfYear);
 extend(isoWeek);
 extend(isBetween);
+
 export const LayoutSettings = ({ children }: { children: ReactNode }) => {
   const fetch = useFetch();
   const t = useT();
