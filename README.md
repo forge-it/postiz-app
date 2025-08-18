@@ -113,10 +113,6 @@ To have the project up and running, please follow the [Quick Start Guide](https:
 - Postiz never ask users to paste API keys into our hosted product.
 - Postiz Users always authenticate directly with the social platform (e.g., X, Discord, etc.), ensuring platform compliance and data privacy.
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=forge-it/postiz-app&type=Date)](https://www.star-history.com/#forge-it/postiz-app&Date)
-
 ## License
 
 This repository's source code is available under the [AGPL-3.0 license](LICENSE).
