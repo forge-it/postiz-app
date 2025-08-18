@@ -192,7 +192,9 @@ const Info: FC<{
       </div>
       <div>
         <Button disabled={feedback.length < 20} onClick={cancel}>
-          {feedback.length < 20 ? t('please_add_at_least', 'Please add at least 20 chars') : t('cancel_subscription', 'Cancel Subscription')}
+          {feedback.length < 20
+            ? t('please_add_at_least', 'Please add at least 20 chars')
+            : t('cancel_subscription', 'Cancel Subscription')}
         </Button>
       </div>
     </div>
@@ -405,7 +407,7 @@ export const MainBillingComponent: FC<{
               <div className="text-[18px]">{name}</div>
               <div className="text-[38px] flex gap-[2px] items-center">
                 <div>
-                  $
+                  RON
                   {monthlyOrYearly === 'on'
                     ? values.year_price
                     : values.month_price}
