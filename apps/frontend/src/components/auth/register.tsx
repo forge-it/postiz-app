@@ -34,11 +34,13 @@ export function Register() {
   const [provider] = useState(getQuery?.get('provider')?.toUpperCase());
   const [code, setCode] = useState(getQuery?.get('code') || '');
   const [show, setShow] = useState(false);
+  
   useEffect(() => {
     if (provider && code) {
       load();
     }
   }, []);
+  
   const load = useCallback(async () => {
     const { token } = await (
       await fetch(`/auth/oauth/${provider?.toUpperCase() || 'LOCAL'}/exists`, {
@@ -48,11 +50,13 @@ export function Register() {
         }),
       })
     ).json();
+    
     if (token) {
       setCode(token);
       setShow(true);
     }
   }, [provider, code]);
+  
   if (!code && !provider) {
     return <RegisterAfter token="" provider="LOCAL" />;
   }
@@ -63,6 +67,7 @@ export function Register() {
     <RegisterAfter token={code} provider={provider?.toUpperCase() || 'LOCAL'} />
   );
 }
+
 function getHelpfulReasonForRegistrationFailure(httpCode: number) {
   switch (httpCode) {
     case 400:
@@ -82,6 +87,7 @@ export function RegisterAfter({
   const t = useT();
   const { isGeneral, genericOauth, neynarClientId, billingEnabled } =
     useVariables();
+  
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const fireEvents = useFireEvents();

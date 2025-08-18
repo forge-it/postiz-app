@@ -10,12 +10,15 @@ export const metadata: Metadata = {
   title: `${isGeneralServerSide() ? 'Postiz' : 'Forgeit'} Register`,
   description: '',
 };
+
 export default async function Auth(params: {searchParams: {provider: string}}) {
   const t = await getT();
   if (process.env.DISABLE_REGISTRATION === 'true') {
+    console.log(`Environment variable DISABLE_REGISTRATION is set to ${process.env.DISABLE_REGISTRATION}`)
     const canRegister = (
       await (await internalFetch('/auth/can-register')).json()
     ).register;
+    
     if (!canRegister && !params?.searchParams?.provider) {
       return (
         <>
@@ -31,5 +34,6 @@ export default async function Auth(params: {searchParams: {provider: string}}) {
       );
     }
   }
+  
   return <Register />;
 }

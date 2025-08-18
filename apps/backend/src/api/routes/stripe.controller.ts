@@ -33,7 +33,10 @@ export class StripeController {
     // @ts-ignore
     if (event?.data?.object?.metadata?.service !== 'forgeit') {
       // @ts-ignore
-      console.log('Ignoring non-forgeit webhook:', event?.data?.object?.metadata?.service || 'no service');
+      console.log(
+        'Ignoring non-forgeit webhook:',
+        event?.data?.object?.metadata?.service || 'no service'
+      );
       return { ok: true };
     }
 
@@ -62,7 +65,10 @@ export class StripeController {
       event.type !== 'invoice.payment_succeeded'
     ) {
       // @ts-ignore
-      console.log('Ignoring non-forgeit webhook:', event?.data?.object?.metadata?.service || 'no service');
+      console.log(
+        'Ignoring non-forgeit webhook:',
+        event?.data?.object?.metadata?.service || 'no service'
+      );
       return { ok: true };
     }
 

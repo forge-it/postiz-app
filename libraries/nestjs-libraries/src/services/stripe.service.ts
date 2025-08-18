@@ -86,7 +86,7 @@ export class StripeService {
 
     try {
       const paymentIntent = await stripe.paymentIntents.create({
-        amount: 100,
+        amount: 200, // 2.00 RON (minimum amount)
         currency: 'ron',
         payment_method: latestMethod.id,
         customer: event.data.object.customer as string,

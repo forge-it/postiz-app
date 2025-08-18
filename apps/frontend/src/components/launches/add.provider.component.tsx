@@ -264,6 +264,7 @@ export const CustomVariables: FC<{
       {}
     ),
   });
+  
   const submit = useCallback(
     async (data: FieldValues) => {
       gotoUrl(

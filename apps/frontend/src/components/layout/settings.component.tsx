@@ -59,6 +59,7 @@ export const SettingsPopup: FC<{
     form.setValue('bio', personal.bio || '');
     form.setValue('picture', personal.picture);
   }, []);
+  
   const openMedia = useCallback(() => {
     showMediaBox((values) => {
       form.setValue('picture', values);
@@ -86,9 +87,12 @@ export const SettingsPopup: FC<{
   const t = useT();
   const list = useMemo(() => {
     const arr = [];
-    arr.push({ tab: 'global_settings', label: t('global_settings', 'Global Settings') });
+    arr.push({
+      tab: 'global_settings',
+      label: t('global_settings', 'Global Settings'),
+    });
     // Populate tabs based on user permissions
-    if (user?.tier?.team_members && isGeneral) {
+    if (user?.tier?.team_members) {
       arr.push({ tab: 'teams', label: t('teams', 'Teams') });
     }
     if (user?.tier?.webhooks) {
@@ -103,12 +107,12 @@ export const SettingsPopup: FC<{
     if (user?.tier.current !== 'FREE') {
       arr.push({ tab: 'signatures', label: t('signatures', 'Signatures') });
     }
-    if (user?.tier?.public_api && isGeneral && showLogout) {
+    if (user?.tier?.public_api && showLogout) {
       arr.push({ tab: 'api', label: t('public_api', 'Public API') });
     }
 
     return arr;
-  }, [user, isGeneral, showLogout, t]);
+  }, [user, showLogout, t]);
 
   useEffect(() => {
     loadProfile();
@@ -164,7 +168,7 @@ export const SettingsPopup: FC<{
                   <GlobalSettings />
                 </div>
               )}
-              {tab === 'teams' && !!user?.tier?.team_members && isGeneral && (
+              {tab === 'teams' && !!user?.tier?.team_members && (
                 <div>
                   <TeamsComponent />
                 </div>

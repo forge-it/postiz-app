@@ -9,6 +9,7 @@ export const GoogleProvider = () => {
     const link = await (await fetch('/auth/oauth/GOOGLE')).text();
     window.location.href = link;
   }, []);
+  
   return (
     <div
       onClick={gotoLogin}

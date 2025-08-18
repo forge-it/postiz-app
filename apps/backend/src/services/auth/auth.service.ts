@@ -238,6 +238,7 @@ export class AuthService {
       user.id,
       provider as Provider
     );
+    
     if (checkExists) {
       return { jwt: await this.jwt(checkExists) };
     }
