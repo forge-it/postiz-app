@@ -407,7 +407,7 @@ export const MainBillingComponent: FC<{
               <div className="text-[18px]">{name}</div>
               <div className="text-[38px] flex gap-[2px] items-center">
                 <div>
-                  RON
+                  RON 
                   {monthlyOrYearly === 'on'
                     ? values.year_price
                     : values.month_price}
@@ -482,7 +482,7 @@ export const MainBillingComponent: FC<{
             </div>
           ))}
       </div>
-      {!subscription?.id && <PurchaseCrypto />}
+      
       {!!subscription?.id && (
         <div className="flex justify-center mt-[20px] gap-[10px]">
           <Button onClick={updatePayment}>
@@ -502,6 +502,7 @@ export const MainBillingComponent: FC<{
           )}
         </div>
       )}
+      
       {subscription?.cancelAt && isGeneral && (
         <div className="text-center">
           {t(
@@ -516,6 +517,7 @@ export const MainBillingComponent: FC<{
           )}
         </div>
       )}
+      
       <FAQComponent />
     </div>
   );

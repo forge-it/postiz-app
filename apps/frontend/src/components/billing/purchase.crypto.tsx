@@ -2,6 +2,7 @@ import { FC, useCallback, useState } from 'react';
 import { useFetch } from '@gitroom/helpers/utils/custom.fetch';
 import { Button } from '@gitroom/react/form/button';
 import { useT } from '@gitroom/react/translation/get.transation.service.client';
+
 export const PurchaseCrypto: FC = () => {
   const fetch = useFetch();
   const t = useT();
@@ -12,6 +13,7 @@ export const PurchaseCrypto: FC = () => {
     const data = await (await fetch('/billing/crypto')).json();
     window.location.href = data.invoice_url;
   }, []);
+  
   return (
     <div className="flex-1 bg-sixth items-center border border-customColor6 rounded-[4px] p-[24px] gap-[16px] flex [@media(max-width:1024px)]:items-center">
       <div>

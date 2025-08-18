@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { useVariables } from '@gitroom/react/helpers/variable.context';
 import { useUser } from '@gitroom/frontend/components/layout/user.context';
 import { useT } from '@gitroom/react/translation/get.transation.service.client';
+
 const useFaqList = () => {
   const { isGeneral } = useVariables();
   const user = useUser();
@@ -58,6 +59,7 @@ For example, you can schedule your posts on X, Facebook, Instagram, TikTok, YouT
     },
   ];
 };
+
 export const FAQSection: FC<{
   title: string;
   description: string;
@@ -129,6 +131,7 @@ export const FAQSection: FC<{
     </div>
   );
 };
+
 export const FAQComponent: FC = () => {
   const t = useT();
   const list = useFaqList();
