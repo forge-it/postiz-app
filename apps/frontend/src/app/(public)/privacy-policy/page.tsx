@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Privacy Policy - Postiz',
+  title: 'Privacy Policy - Forgeit',
   description: 'Privacy policy for Postiz social media scheduling tool',
 };
 
@@ -40,9 +40,8 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm text-gray-500 mb-6">
               <strong>Last Updated:</strong> December 2024
             </p>
-
             <p>
-              At Postiz ("Company," "we," "us," or "our"), we are committed to
+              At Forgeit ("Company," "we," "us," or "our"), we are committed to
               protecting the privacy and security of our users' personal
               information. This Privacy Policy outlines how we collect, use, and
               safeguard the personal information collected on our website. By
@@ -50,25 +49,22 @@ export default function PrivacyPolicyPage() {
               providing your personal information, you agree to the terms and
               conditions of this Privacy Policy.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               1. Our Services
             </h2>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-              Postiz Services
+              Forgeit Services
             </h3>
             <p>
-              Postiz's suite of social media management and social care tools is
-              accessible via our websites and mobile applications. These tools
-              allow you to combine all your social media accounts for easy
+              Forgeit's suite of social media management and social care tools
+              is accessible via our websites and mobile applications. These
+              tools allow you to combine all your social media accounts for easy
               access and management through a single online platform. Through
               this platform, you can manage your social media, marketing, and
               advertising campaigns, engage with your audiences, schedule and
               publish messages, manage customer care communications, and analyze
               the results of these activities.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Social Networks
             </h3>
@@ -79,9 +75,8 @@ export default function PrivacyPolicyPage() {
               their respective privacy policies and terms. When using Social
               Networks, you must comply with their privacy policies and terms.
               We recommend carefully reviewing their privacy policies and terms,
-              as Postiz is not responsible for Social Networks.
+              as Forgeit is not responsible for Social Networks.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Your Privacy Obligations
             </h3>
@@ -93,7 +88,6 @@ export default function PrivacyPolicyPage() {
               or complaints regarding your use of the Services, we will direct
               the request to you for further assistance.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Business Purposes
             </h3>
@@ -102,7 +96,6 @@ export default function PrivacyPolicyPage() {
               be accessed by individuals at least 18 years old and are using the
               Services for business purposes.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               2. What information do we collect?
             </h2>
@@ -110,7 +103,6 @@ export default function PrivacyPolicyPage() {
               We collect information about you as reasonably necessary for the
               following activities:
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Using our Services
             </h3>
@@ -118,7 +110,6 @@ export default function PrivacyPolicyPage() {
               We may collect the following information when you use our
               Services:
             </p>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
               Account information:
             </h4>
@@ -143,7 +134,6 @@ export default function PrivacyPolicyPage() {
                 related to the Services.
               </li>
             </ul>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
               Content:
             </h4>
@@ -186,7 +176,6 @@ export default function PrivacyPolicyPage() {
                 social media users.
               </li>
             </ul>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
               Logs, usage, and support data:
             </h4>
@@ -214,7 +203,6 @@ export default function PrivacyPolicyPage() {
                 you choose to provide.
               </li>
             </ul>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Surveys, events, marketing, and other activities
             </h3>
@@ -238,7 +226,6 @@ export default function PrivacyPolicyPage() {
                 needs.
               </li>
             </ul>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
               Other interactions:
             </h4>
@@ -266,7 +253,6 @@ export default function PrivacyPolicyPage() {
                 accessed, viewed and downloaded.
               </li>
             </ul>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Browsing our websites
             </h3>
@@ -283,7 +269,7 @@ export default function PrivacyPolicyPage() {
                 related to your use of our Services.
               </li>
               <li>
-                Postiz and our authorized service providers use cookies and
+                Forgeit and our authorized service providers use cookies and
                 similar tracking technologies, including web beacons, pixels,
                 and software tokens, on our websites and services.
               </li>
@@ -293,12 +279,10 @@ export default function PrivacyPolicyPage() {
                 type, session experience and replay, and mouse movements.
               </li>
             </ul>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               3. How do we use your information?
             </h2>
             <p>We use your information for the purposes described below:</p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Providing and securing our Services
             </h3>
@@ -349,7 +333,6 @@ export default function PrivacyPolicyPage() {
                 Services) in order to provide the Services.
               </li>
             </ul>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Communicating with you
             </h3>
@@ -367,7 +350,6 @@ export default function PrivacyPolicyPage() {
                 services that would be more suitable for you.
               </li>
             </ul>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Improving our websites and applications
             </h3>
@@ -390,11 +372,9 @@ export default function PrivacyPolicyPage() {
                 marketing processes, and to improve our Services.
               </li>
             </ul>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               4. What are your rights regarding the information about you?
             </h2>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Services information
             </h3>
@@ -406,21 +386,21 @@ export default function PrivacyPolicyPage() {
             <p>
               If you have requests that cannot be carried out by logging in to
               your account, such as accessing additional information or deleting
-              information about you, for the Postiz services, please email our
+              information about you, for the Forgeit services, please email our
               privacy team at{' '}
               <a
-                href="mailto:privacy@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                privacy@postiz.com
+                forge.itc@gmail.com
               </a>
               . Please note that we may need to retain certain information about
               you for as long as you maintain an account for our Services, to
               provide you with our Services, for record keeping purposes, for
               payment processing, to comply with our legal and regulatory
-              obligations, to resolve disputes, or to enforce the Postiz terms
+              obligations, to resolve disputes, or to enforce the Forgeit terms
               of service, or other agreement in place between you (or your
-              organization) and Postiz (collectively, the "Terms of Service").
+              organization) and Forgeit (collectively, the "Terms of Service").
             </p>
             <p>
               Requests to access, correct, update, or delete your information
@@ -434,10 +414,10 @@ export default function PrivacyPolicyPage() {
               provide the Services, you may revoke this access at any time by
               emailing our support team at{' '}
               <a
-                href="mailto:support@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                support@postiz.com
+                forge.itc@gmail.com
               </a>
               . For example, if you have authorized us to access your
               information via the YouTube API services, in addition to our
@@ -447,59 +427,37 @@ export default function PrivacyPolicyPage() {
             <p>
               You can contact our Support team for other general requests at{' '}
               <a
-                href="mailto:support@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                support@postiz.com
+                forge.itc@gmail.com
               </a>
               .
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Marketing emails, advertising and website browsing
             </h3>
             <p>
               For marketing communications, you may opt out of marketing
-              communications sent by Postiz by clicking on the unsubscribe link
+              communications sent by Forgeit by clicking on the unsubscribe link
               in the marketing email you receive. Please note that if you are a
-              Postiz user, unsubscribing from marketing communications will not
+              Forgeit user, unsubscribing from marketing communications will not
               affect product-generated emails sent in connection with your use
               of our Services.
-            </p>
-            <p>
-              Postiz participates in interest-based advertising (where you may
-              have visited our websites or another website which allows us to
-              display advertising relating to our Services). The Network
-              Advertising Initiative has developed a tool that may help you
-              understand which third parties have currently enabled cookies for
-              your browser and how to opt out of those cookies. For more
-              information and to opt out of interest-based advertising, you can
-              visit the{' '}
-              <a
-                href="https://optout.networkadvertising.org/"
-                className="text-blue-600 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Network Advertising Initiative opt-out page
-              </a>
-              .
             </p>
             <p>
               For more information on how to opt out of marketing cookies,
               review our Cookie Notice.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               5. Who has access to your information?
             </h2>
             <p>
-              Postiz does not rent or sell your information. We restrict access
+              Forgeit does not rent or sell your information. We restrict access
               to your information to authorized employees and we do not share
               your information with third parties except in the circumstances
               explained below.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Authorized Contractors
             </h3>
@@ -520,7 +478,6 @@ export default function PrivacyPolicyPage() {
               maintain the confidentiality and protect the privacy of your
               information.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Service Providers, Authorized Resellers, and Partners
             </h3>
@@ -562,7 +519,6 @@ export default function PrivacyPolicyPage() {
               other organizations for such purposes, either upon registration or
               during the event.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Social Networks and Third-Party Services
             </h3>
@@ -584,38 +540,9 @@ export default function PrivacyPolicyPage() {
               </a>{' '}
               will apply to you.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Customer Organizations
             </h3>
-            <p>
-              Where your employer or an entity has purchased Services on your
-              behalf, we may disclose information about you such as your name
-              and email address, and some usage information including whether a
-              user has logged in to the Service, frequency of login, time spent
-              using the Services, and enrollment and completion of Postiz
-              Academy courses to assist your employer or the entity in managing
-              its use and maximizing the value of the Services.
-            </p>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-              Successor and Affiliated Entities
-            </h3>
-            <p>
-              We may share information about you among Postiz-controlled
-              affiliates and subsidiaries, and they will protect your
-              information in a manner that is consistent with this Privacy
-              Policy and where applicable, in accordance with the privacy policy
-              specific to the entity.
-            </p>
-            <p>
-              We may also disclose your information as part of a corporate
-              transaction such as a merger or sale of assets. If we do, we will
-              inform such entities of the requirement to handle your information
-              in accordance with this Privacy Policy, or inform you that you are
-              covered by a new privacy policy.
-            </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Law Enforcement, Government Agencies, and Professional Advisors
             </h3>
@@ -647,9 +574,8 @@ export default function PrivacyPolicyPage() {
               when engaging them for their services and as necessary for audits,
               financial and other regulatory reviews.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              6. What international data transfers occur at Postiz?
+              6. What international data transfers occur at Forgeit?
             </h2>
             <p>
               Under the General Data Protection Regulation (GDPR) and other data
@@ -660,19 +586,19 @@ export default function PrivacyPolicyPage() {
               EEA if adequate data protections are in place.
             </p>
             <p>
-              Our Services are managed by Postiz headquarters in USA. As the
-              European Commission considers USA to be a country which provides
-              adequate data protection, information about you may be transferred
-              from the EEA to USA.
+              Our Services are managed by Forgeit headquarters in Romania. As
+              the European Commission considers Romania to be a country which
+              provides adequate data protection, information about you may be
+              transferred from the EEA to Romania.
             </p>
             <p>
-              Postiz also uses third-party service providers, such as managed
+              Forgeit also uses third-party service providers, such as managed
               hosting providers, credit card processors, and technology partners
               to provide the software, networking, infrastructure and other
               services required to operate the Services. These third-party
               providers may process or store personal data on servers outside of
-              the the US. We rely on adequacy and standard contractual clauses
-              (if sent to the US or onward to other countries) to ensure that
+              Romania. We rely on adequacy and standard contractual clauses (if
+              sent to the US or onward to other countries) to ensure that
               information about you is lawfully transferred under EU law.
             </p>
             <p>
@@ -682,12 +608,11 @@ export default function PrivacyPolicyPage() {
               process your information from various locations around the world
               according to their own terms and privacy policies.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               7. How do we safeguard your information?
             </h2>
             <p>
-              Postiz maintains industry standard security safeguards to protect
+              Forgeit maintains industry standard security safeguards to protect
               your information. This includes ensuring our employees receive
               appropriate security and privacy training and guidance so they are
               aware of the measures they need to implement to protect your
@@ -710,12 +635,11 @@ export default function PrivacyPolicyPage() {
               with our service providers. All payment information is fully
               encrypted and handled only by PCI certified organizations.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               8. How long do we retain your information?
             </h2>
             <p>
-              In general for the Postiz Services, we do not permanently store
+              In general for the Forgeit Services, we do not permanently store
               Content from Social Networks. Rather, when you login to the
               Services, we retrieve data from Social Networks in real time so
               that it is displayed in the platform for viewing during your
@@ -740,23 +664,21 @@ export default function PrivacyPolicyPage() {
               will dispose of it in a secure manner or anonymize the
               information.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              9. Postiz's roles under the GDPR and UK data protection laws
+              9. Forgeit's roles under the GDPR and Romania data protection laws
             </h2>
             <p>
-              Depending on the situation and the type of data involved, Postiz
+              Depending on the situation and the type of data involved, Forgeit
               may act as a data controller or a data processor.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-              Postiz as a data controller
+              Forgeit as a data controller
             </h3>
-            <p>Postiz may act as a data controller when we are:</p>
+            <p>Forgeit may act as a data controller when we are:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
                 Collecting information from you to set up and administer your
-                Postiz account (for example, Account information such as your
+                Forgeit account (for example, Account information such as your
                 name and email address);
               </li>
               <li>Monitoring usage information on our website;</li>
@@ -767,9 +689,8 @@ export default function PrivacyPolicyPage() {
               <li>Responding to a support or general inquiry; and</li>
               <li>Recruiting individuals for job opportunities.</li>
             </ul>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
-              Legal bases for processing when Postiz is a data controller
+              Legal bases for processing when Forgeit is a data controller
             </h4>
             <p>The legal bases for processing information about you include:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -802,19 +723,19 @@ export default function PrivacyPolicyPage() {
                 health-related information during a medical emergency).
               </li>
             </ul>
-
             <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">
-              Your rights when Postiz is a data controller
+              Your rights when Forgeit is a data controller
             </h4>
             <p>
-              Where Postiz is acting as a data controller, we have outlined
+              Where Forgeit is acting as a data controller, we have outlined
               certain rights in the "What are your privacy rights?" section.
             </p>
-            <p>In addition, you may have the following rights:</p>
+            In addition, you may have the following rights under Romanian Law
+            No. 190/2018:
             <ul className="list-disc pl-6 space-y-2">
               <li>
                 <strong>Right to object to processing:</strong> You may request
-                that Postiz stop processing information about you (for example,
+                that Forgeit stop processing information about you (for example,
                 stop sending you marketing communications).
               </li>
               <li>
@@ -824,7 +745,7 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Right to data portability:</strong> You may request that
-                we provide you with information Postiz has about you in a
+                we provide you with information Forgeit has about you in a
                 structured, machine-readable, and commonly used format or
                 transfer this information to another data controller.
               </li>
@@ -833,28 +754,28 @@ export default function PrivacyPolicyPage() {
               If you would like assistance on any of the above requests, please
               email our Privacy team at{' '}
               <a
-                href="mailto:privacy@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                privacy@postiz.com
+                forge.itc@gmail.com
               </a>
-              .
+              , or contact the Romanian National Supervisory Authority for
+              Personal Data Processing (ANSPDCP).
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
-              Postiz as a data processor
+              Forgeit as a data processor
             </h3>
             <p>
               When you use our Services and make decisions about the personal
               data being processed in them (including selecting the Social
               Network accounts you wish to connect to the Services or uploading
               and using Content), you are acting as a data controller, and
-              Postiz is acting as a data processor.
+              Forgeit is acting as a data processor.
             </p>
             <p>
               As a data controller, you have certain obligations under the GDPR,
               including managing Content on the Services. As a data processor,
-              Postiz will only access and process Content to provide you with
+              Forgeit will only access and process Content to provide you with
               the Services by your instructions (which you provide through the
               Services), the Terms of Service, the Social Networks' terms, and
               applicable laws. As part of delivering the Services, we may
@@ -862,13 +783,13 @@ export default function PrivacyPolicyPage() {
               usability and developing new features.
             </p>
             <p>
-              As a data controller, suppose you require Postiz to agree to data
-              protection requirements under Article 28, GDPR, or UK data
-              protection laws. In that case, Postiz makes available a data
-              processing addendum that meets these requirements.
+              As a data controller, suppose you require Forgeit to agree to data
+              protection requirements under Article 28, GDPR, or Romanian Law
+              No. 190/2018 regarding the processing of personal data and the
+              free movement of such data.
             </p>
             <p>
-              If you are using the Services as an authorized user of a Postiz
+              If you are using the Services as an authorized user of a Forgeit
               customer (whether that customer is your employer, another
               organization, or an individual), that customer determines its own
               policies (if any) regarding storage, access, modification,
@@ -876,7 +797,6 @@ export default function PrivacyPolicyPage() {
               which may apply to your use of the Services. Please check with
               that customer about the policies and settings it has in place.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               10. Your California Privacy Rights
             </h2>
@@ -887,7 +807,6 @@ export default function PrivacyPolicyPage() {
               case, the following provisions apply to you. Definitions of terms
               are set out in the California Privacy Laws.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Your Rights
             </h3>
@@ -917,10 +836,10 @@ export default function PrivacyPolicyPage() {
               information by logging in to your account; or you may exercise
               your rights by emailing our Privacy team at{' '}
               <a
-                href="mailto:privacy@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                privacy@postiz.com
+                forge.itc@gmail.com
               </a>
               .
             </p>
@@ -930,7 +849,6 @@ export default function PrivacyPolicyPage() {
               distributing marketing communications) and providing the Services,
               we do not sell your personal information.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               11. Cookies and Similar Technologies
             </h2>
@@ -940,7 +858,6 @@ export default function PrivacyPolicyPage() {
               about the types of cookies we use, why, and how you can control
               cookies, please see our Cookie Notice.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               What are cookies?
             </h3>
@@ -950,7 +867,6 @@ export default function PrivacyPolicyPage() {
               website owners to make their websites work, or to work more
               efficiently, as well as to provide reporting information.
             </p>
-
             <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
               Types of cookies we use:
             </h3>
@@ -974,14 +890,13 @@ export default function PrivacyPolicyPage() {
                 interests and show you relevant adverts on other sites.
               </li>
             </ul>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               12. Third-Party Links and Services
             </h2>
             <p>
               Our Services may contain links to third-party websites,
               applications, and services that are not owned or controlled by
-              Postiz. We are not responsible for the privacy practices of these
+              Forgeit. We are not responsible for the privacy practices of these
               third parties. We encourage you to read the privacy policies of
               every website and service that you visit or use.
             </p>
@@ -991,7 +906,6 @@ export default function PrivacyPolicyPage() {
               social media platforms). These integrations are governed by the
               respective third parties' privacy policies and terms of service.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               13. Children's Privacy
             </h2>
@@ -1006,14 +920,13 @@ export default function PrivacyPolicyPage() {
               If you believe that we might have collected information from a
               child under 18, please contact us at{' '}
               <a
-                href="mailto:privacy@postiz.com"
+                href="mailto:forge.itc@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                privacy@postiz.com
+                forge.itc@gmail.com
               </a>
               .
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               14. Data Breach Notification
             </h2>
@@ -1027,7 +940,6 @@ export default function PrivacyPolicyPage() {
               consequences, and the measures taken or proposed to address the
               breach.
             </p>
-
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
               15. Changes to this Privacy Policy
             </h2>
@@ -1044,9 +956,6 @@ export default function PrivacyPolicyPage() {
               Services after any changes indicates your acceptance of the
               updated Privacy Policy.
             </p>
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              16. Contact Us
-            </h2>
           </div>
         </div>
       </div>

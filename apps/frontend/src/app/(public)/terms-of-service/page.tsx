@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
 
           <div className="prose prose-lg max-w-none">
             <p>
-              Welcome to the Postiz website (the "Site"). By accessing or using
+              Welcome to the Forgeit Postiz website (the "Site"). By accessing or using
               the Site, you agree to comply with and be bound by the following
               terms and conditions ("Terms of Service").
             </p>
@@ -73,7 +73,7 @@ export default function TermsOfServicePage() {
             <p>
               All content on the Site, including but not limited to text,
               graphics, logos, images, videos, and course content, is the
-              property of Postiz or its licensors and is protected by
+              property of Forgeit or its licensors and is protected by
               intellectual property laws. You may not reproduce, modify,
               distribute, or otherwise use any content on the Site without our
               prior written consent.
@@ -92,7 +92,7 @@ export default function TermsOfServicePage() {
 
             <h2>6. Limitation of Liability</h2>
             <p>
-              In no event shall Postiz be liable for any indirect, incidental,
+              In no event shall Forgeit be liable for any indirect, incidental,
               special, or consequential damages arising out of or in connection
               with your use of the Site, the course content, or your
               subscription to the newsletter, whether based on contract, tort,
@@ -113,7 +113,7 @@ export default function TermsOfServicePage() {
 
             <h2>8. Indemnification</h2>
             <p>
-              You agree to indemnify and hold harmless Postiz, its affiliates,
+              You agree to indemnify and hold harmless Forgeit, its affiliates,
               officers, directors, employees, agents, and licensors from and
               against any claims, liabilities, damages, losses, and expenses,
               including without limitation reasonable attorney's fees, arising
@@ -126,7 +126,7 @@ export default function TermsOfServicePage() {
             <h2>9. Governing Law and Jurisdiction</h2>
             <p>
               These Terms of Service shall be governed by and construed in
-              accordance with the laws of the jurisdiction where Postiz is
+              accordance with the laws of the jurisdiction where Forgeit is
               headquartered without giving effect to any principles of conflicts
               of law. You agree to submit to the exclusive jurisdiction of the
               courts in that jurisdiction for any disputes arising out of or in
@@ -136,7 +136,7 @@ export default function TermsOfServicePage() {
             <h2>10. Entire Agreement</h2>
             <p>
               These Terms of Service constitute the entire agreement between you
-              and Postiz regarding your use of the Site, the course content, and
+              and Forgeit regarding your use of the Site, the course content, and
               your subscription to the newsletter and supersede all prior and
               contemporaneous agreements and understandings, whether oral or
               written, relating to the same subject matter.
@@ -151,7 +151,7 @@ export default function TermsOfServicePage() {
 
             <h2>12. Waiver</h2>
             <p>
-              The failure of Postiz to enforce any right or provision of these
+              The failure of Forgeit to enforce any right or provision of these
               Terms of Service shall not constitute a waiver of that right or
               provision.
             </p>
