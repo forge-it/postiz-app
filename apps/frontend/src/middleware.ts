@@ -89,7 +89,7 @@ export async function middleware(request: NextRequest) {
   }
   if (nextUrl.href.indexOf('/auth') > -1 && !authCookie) {
     if (org) {
-      const redirect = NextResponse.redirect(new URL(`/`, nextUrl.href));
+      const redirect = NextResponse.redirect(new URL(`/auth/register`, nextUrl.href));
       redirect.cookies.set('org', org, {
         ...(!process.env.NOT_SECURED
           ? {
